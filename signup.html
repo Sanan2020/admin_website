@@ -1,0 +1,56 @@
+<form action="signup_save.php" method="post">
+    <h2>Sign Up</h2>
+
+    <input type="text" name="fname" placeholder="Your First Name" required>
+    <input type="text" name="lname" placeholder="Your Last Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="password" name="password" placeholder="Your Password" required>
+
+    <button type="submit">Sign Up</button>
+
+    <div class="login-link">
+      <a href="index.php">I already have an account.</a>
+    </div>
+  </form>
+<style>
+       body {
+      font-family: sans-serif;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+
+      padding: 40px;  
+      background-color:cornflowerblue;
+      position: absolute;
+      left: 37%;
+      top: 20%;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #000;
+}
+</style>
