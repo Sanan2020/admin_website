@@ -2,16 +2,11 @@
     $is = $_REQUEST['is'];
     echo "<script>var name = '$is';</script>";
 ?>
-
-<!-- Include SweetAlert CSS -->
-<!-- Include SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 <!-- Include SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <!-- JavaScript code -->
 <script>
-
-
   function showSweetAlert2() {
     Swal.fire({
       title: 'แก้ไขรหัสผ่านสำเร็จ',
@@ -21,12 +16,8 @@
       showConfirmButton: false, // Hide the OK button
     });
 
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
-     // let elements = document.getElementsByName("is");
-      
-      //alert(name);
       if(name==1){
         window.location='../home/admin.php';
       }else{
@@ -46,11 +37,6 @@
         echo "<script type='text/javascript'>",
         "showSweetAlert2();",
         "</script>";
-        // if($is==1){
-        //     require('../home/admin.php');
-        //   }else{
-        //     require('../home/user.php');}
-        //echo "Record updated successfully";
     } else {
         echo "Error updating record: " . mysqli_error($conn);
     }

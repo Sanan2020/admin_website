@@ -3,27 +3,16 @@
 <head>
  
 <?php
-      // if(session_status() != 2){
-       session_start();
-      // // echo session_status();
-      // }
-    require '../navbar.html';
-    require '../connect.php';
-
-
-//  if(isset($_SESSION['user'])) {
-//    echo "Logged in as " . $_SESSION['user'];
-//  } else {
-//    echo "Not logged in.";
-//    $_SESSION['user'] = "sanan";
-//    echo "<script type='text/javascript'>",
-//      "showSweetAlert();",
-//      "</script>";
-//  }
+  // if(session_status() != 2){
+  session_start();
+  // echo session_status();
+  // }
+  require '../navbar.html';
+  require '../connect.php';
 ?>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar</title>
+  <title>Guitar</title>
 </head>
 
 <script>
@@ -93,41 +82,29 @@
 </body>
 </html>
 
-<!-- Include SweetAlert CSS -->
-<!-- Include SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
-
 <!-- Include SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-<!-- JavaScript code -->
 <script>
   function showSweetAlert() {
     Swal.fire({
       title: 'เข้าสู่ระบบสำเร็จ',
-      text: 'This is a SweetAlert dialog.',
+      text: '',
       icon: 'success',
-      // confirmButtonText: 'OK'
-      showConfirmButton: false, // Hide the OK button
+      showConfirmButton: false,
     });
-
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
     }, 2000);
   }
-//  showSweetAlert();
 </script>
 
 <?php
 // session_start();
-
- if(isset($_SESSION['user'])) {
+ if(isset($_SESSION['admin'])) {
   //  echo "Logged in as " . $_SESSION['user'];
  } else {
   //  echo "Not logged in.";
-   $_SESSION['user'] = "sanan";
-   echo "<script type='text/javascript'>",
-     "showSweetAlert();",
-     "</script>";
+   $_SESSION['admin'] = "active";
+   echo "<script type='text/javascript'>","showSweetAlert();","</script>";
  }

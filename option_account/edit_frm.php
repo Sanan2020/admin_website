@@ -59,7 +59,6 @@ form {
     mysqli_close($conn);
 ?>
     <center>
-  
         <form action="edit_save.php">
         <input hidden name="is" type="text" value="<?php echo $is ?>">
         <input hidden name="id" type="text" value="<?php echo $id ?>">
@@ -68,7 +67,6 @@ form {
         Last name: <input name="lname" type="text" value="<?php echo $lname ?>" required>
         <input style="padding: 6px 14px; background-color: #04AA6D; border: none; color: white;" type="submit" value="Save Changes"></td></tr>
         </form>
-
 </center>
 </body>
 </html>

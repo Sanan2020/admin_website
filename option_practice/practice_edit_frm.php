@@ -13,7 +13,7 @@
 form {
       width: 300px;
       /* margin: 0 auto; */
-        padding: 40px;  
+      padding: 40px;  
 
       background-color:#ccc;
       position: absolute;

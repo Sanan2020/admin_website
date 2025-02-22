@@ -11,31 +11,10 @@ $mail = $_REQUEST['mail'];
 $ran = $_REQUEST['ran'];
 //echo $ran;
 ?>
- <!-- Include SweetAlert CSS -->
-<!-- Include SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
-
 <!-- Include SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-<!-- JavaScript code -->
 <script>
-  function showSweetAlert() {
-    Swal.fire({
-      title: '',
-      text: 'This is a SweetAlert dialog.',
-      icon: 'error',
-      // confirmButtonText: 'OK'
-      showConfirmButton: false, // Hide the OK button
-    });
-
-    // Set a timeout to close SweetAlert after 3 seconds
-    setTimeout(() => {
-      Swal.close();
-    }, 1000);
-
-  }
-//  showSweetAlert();
 function showSweetAlert2() {
     Swal.fire({
       title: 'รหัสไม่ถูกต้อง',
@@ -45,7 +24,6 @@ function showSweetAlert2() {
       showConfirmButton: false, // Hide the OK button
     });
 
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
     }, 1000);
@@ -100,7 +78,6 @@ function showSweetAlert2() {
     <!-- Password: <input type="password" placeholder="Password" id="password" name="pass" required> -->
     <button type="submit">Reset</button>
 </form>
-
 <?php
     if(isset($_REQUEST['password'])) {
     $pass = $_REQUEST['password'];

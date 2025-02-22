@@ -5,14 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
- <!-- Include SweetAlert CSS -->
-<!-- Include SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
-
 <!-- Include SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-<!-- JavaScript code -->
 <script>
   function showSweetAlert() {
     Swal.fire({
@@ -23,7 +18,6 @@
       showConfirmButton: false, // Hide the OK button
     });
 
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
       //goto page login
@@ -31,7 +25,7 @@
     }, 2000);
 
   }
-//  showSweetAlert();
+
 function showSweetAlert2() {
     Swal.fire({
       title: 'กรุณากรอกรหัสผ่านให้ตรงกัน',
@@ -41,7 +35,6 @@ function showSweetAlert2() {
       showConfirmButton: false, // Hide the OK button
     });
 
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
     }, 2000);
@@ -51,8 +44,6 @@ function showSweetAlert2() {
 <?php
 //  if(isset($_REQUEST['email'])) {}
 $mail = $_REQUEST['mail'];
-//echo $mail;
-//select
 ?>
 <style>
     body {
@@ -102,7 +93,6 @@ $mail = $_REQUEST['mail'];
     Confirm Password: <input type="password" placeholder="Confirm Password" name="con_pass" required>
     <button type="submit">Save password</button>
   </form>
-
 <!-- 
   เช็คให้ตรงกัน
   ทำการแก้ไขรหัส
@@ -112,8 +102,6 @@ $mail = $_REQUEST['mail'];
     $pass = $_REQUEST['pass'];
     $con_pass = $_REQUEST['con_pass'];
     if($pass == $con_pass){
-    //echo $pass;
-    //echo $con_pass;
 
     //ทำการแก้ไข pass โดยใช้ mail ค้นหา
     require '../connect.php';

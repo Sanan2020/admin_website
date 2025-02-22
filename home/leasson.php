@@ -8,7 +8,7 @@ div.gallery {
   /* float: left; */
   /* width: 180px; */
   /* background-color:  #ccc; */
-
+  padding-bottom: 5%;
 }
 
 div.gallery:hover {
@@ -69,7 +69,6 @@ div.desc {
   align-items: center;
 }
     
-
 /* เพิ่มสไตล์เพื่อปรับแต่งลักษณะของเส้นคั่น */
     hr {
       /* border: 2px solid #ccc; */
@@ -82,6 +81,18 @@ div.desc {
     h2 {
       margin-left: 60px; /* ระยะห่างด้านบนของย่อหน้า */
     }
+
+    .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: center;  */
+    position: relative;
+}
+.dropdown-content {
+    top: 100%;
+    position: absolute;
+}
 </style>
 <?php
     require '../navbar.html';
@@ -89,7 +100,6 @@ div.desc {
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Guitar</title>
 </head>
 <script>
@@ -104,6 +114,7 @@ div.desc {
     }
     dropdown.classList.toggle("show");
   }
+  
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -133,9 +144,6 @@ div.desc {
  
       <div class="responsive">
       <div class="gallery">
-
-      <!-- <a target='_blank' href='not_found.jpg'> -->
-      <!-- https://www.w3schools.com/images/picture.jpg -->
       <img src='http://localhost/new_image/<?php echo $row["pic"]; ?>' alt='Cinque Terre' >
       <!-- <img src='https://c4be-27-55-70-11.ngrok-free.app/new_image/<?php echo $row["pic"]; ?>' alt='Cinque Terre' > -->
       </a>
@@ -163,7 +171,6 @@ div.desc {
 
 <!-- กลุ่มที่ 2 -->
 <h2>ระดับกลาง</h2>
-<!-- <p>เนื้อหากลุ่มที่ 2</p> -->
 <hr>
  <center><table><td>
 <?php
@@ -174,15 +181,12 @@ div.desc {
  
       <div class="responsive">
       <div class="gallery">
-
-      <!-- <a target='_blank' href='not_found.jpg'> -->
-      <!-- https://www.w3schools.com/images/picture.jpg -->
       <img src='http://localhost/new_image/<?php echo $row["pic"]; ?>' alt='Cinque Terre' >
       <!-- <img src='https://c4be-27-55-70-11.ngrok-free.app/new_image/<?php echo $row["pic"]; ?>' alt='Cinque Terre' > -->
     </a>
       <div style="text-align: left;" class='desc'>ชื่อคอร์ด : <?php echo $row["chords"]; ?><br>ระดับ : <?php echo $row["description"]; ?><br>ย่านความถี่ : <?php echo $row["freq_start"]; ?>-<?php echo $row["freq_end"]; ?></div>
       <!-- <input type='button' value='แก้ไข' onclick="window.location.href='practice_insert_frm.php';"> -->
-      <div class="dropdown">
+      <div class="dropdown" style="text-align: center;">
         <button onclick='toggleDropdown("dropdown<?php echo $row["id"]; ?>")' class="dropbtn">จัดการบทเรียน</button>
         <div id='dropdown<?php echo $row["id"]; ?>' class="dropdown-content">
           <a href='../option_leasson/lesson_edit_frm.php?data=<?php echo $row["id"]; ?>'>แก้ไขบทเรียน</a>
@@ -204,7 +208,6 @@ div.desc {
 
 <!-- กลุ่มที่ 3 -->
 <h2>ระดับยาก</h2>
-<!-- <p>เนื้อหากลุ่มที่ 3</p> -->
 <hr>
  <center><table><td>
 <?php
@@ -215,15 +218,12 @@ div.desc {
  
       <div class="responsive">
       <div class="gallery">
-
-      <!-- <a target='_blank' href='not_found.jpg'> -->
-      <!-- https://www.w3schools.com/images/picture.jpg -->
       <img src='http://localhost/new_image/<?php echo $row["pic"]; ?>' alt='Cinque Terre' >
       <!-- <img src='https://c4be-27-55-70-11.ngrok-free.app/new_image/<?php echo $row["pic"]; ?>' alt='Cinque Terre' > -->
       </a>
       <div style="text-align: left;" class='desc'>ชื่อคอร์ด : <?php echo $row["chords"]; ?><br>ระดับ : <?php echo $row["description"]; ?><br>ย่านความถี่ : <?php echo $row["freq_start"]; ?>-<?php echo $row["freq_end"]; ?></div>
       <!-- <input type='button' value='แก้ไข' onclick="window.location.href='practice_insert_frm.php';"> -->
-      <div class="dropdown">
+      <div class="dropdown" style="text-align: center;">
         <button onclick='toggleDropdown("dropdown<?php echo $row["id"]; ?>")' class="dropbtn">จัดการบทเรียน</button>
         <div id='dropdown<?php echo $row["id"]; ?>' class="dropdown-content">
           <a href='../option_leasson/lesson_edit_frm.php?data=<?php echo $row["id"]; ?>'>แก้ไขบทเรียน</a>

@@ -10,10 +10,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guitar</title>
-   
 </head>
 <style>
-
 form {
       width: 300px;
       /* margin: 0 auto; */
@@ -25,7 +23,6 @@ form {
       top: 20%;
       text-align: left;
     }
-
     input {
       width: 100%;
       padding: 10px;
@@ -33,7 +30,6 @@ form {
       border: 1px solid #ccc;
       border-radius: 3px;
     }
-
     button {
       width: 100%;
       padding: 10px;
@@ -55,9 +51,6 @@ form {
         <input style="padding: 6px 14px; background-color: #04AA6D; border: none; color: white;" type="submit" value="Insert" onclick=""></td></tr>
         </form>
     </center>
-
-  <!-- Include SweetAlert CSS -->
-<!-- Include SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 <!-- Include SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -72,7 +65,6 @@ form {
       showConfirmButton: false, // Hide the OK button
     });
 
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
     }, 2000);
@@ -87,7 +79,6 @@ form {
       showConfirmButton: false, // Hide the OK button
     });
 
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
       let elements = document.getElementsByName("is");
@@ -123,7 +114,6 @@ die("Connection failed: " . mysqli_connect_error());
     }else{
        // echo "no data";
     $is = $_REQUEST['is'];
-
     $email = $_REQUEST['email'];
     $pass = $_REQUEST['pass'];
     $fname = $_REQUEST['fname'];
@@ -135,8 +125,7 @@ die("Connection failed: " . mysqli_connect_error());
       //echo "Record deleted successfully";
        echo "<script type='text/javascript'>",
        "showSweetAlert2();",
-       "</script>";
-      //  echo "<script>window.location='../home/admin.php';</script>";   
+       "</script>";  
     } else {
       echo "Error deleting record: " . mysqli_error($conn);
     } 

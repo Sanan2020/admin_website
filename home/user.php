@@ -45,7 +45,6 @@
     
    // $sql = "SELECT * FROM tb_accounts LEFT JOIN tb_lesson_score ON tb_accounts.id = tb_lesson_score.user_id WHERE isAdmin !='1'";
 
-    
 // $sql = "SELECT acc.id ,acc.email ,acc.password ,acc.fname ,acc.lname ,tb_lesson_score.lesson_score ,tb_practice_score.practice_score 
 // FROM tb_accounts acc
 // LEFT JOIN tb_lesson_score ON acc.id = tb_lesson_score.user_id 
@@ -96,7 +95,6 @@ WHERE isAdmin !='1' ORDER BY acc.id ASC";
     } else {
       echo "<center>0 results</center>";
     }
-    
    // mysqli_close($conn);
 ?>
 </body>

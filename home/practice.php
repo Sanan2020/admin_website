@@ -15,8 +15,7 @@
   /* float: left; */
   /* width: 180px; */
   /* background-color:  #ccc; */
-
-
+  padding-bottom: 5%;
 }
 
 div.gallery:hover {
@@ -46,7 +45,8 @@ div.desc {
 .responsive {
   padding: 6px 6px;
   float: left;
-  width: 36.99999%;
+  /* width: 36.99999%; */
+  width: 24.99999%;
    /* height: 200%;  */
 /* 12 */
 }
@@ -89,6 +89,18 @@ hr {
     h2 {
       margin-left: 60px; /* ระยะห่างด้านบนของย่อหน้า */
     }
+
+    .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: center;  */
+    position: relative;
+}
+.dropdown-content {
+    top: 100%;
+    position: absolute;
+}
 </style>
 <?php
     require '../navbar.html';

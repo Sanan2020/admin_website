@@ -1,6 +1,9 @@
 <?php
     // $email = $_REQUEST['email'];
 ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+<!-- Include SweetAlert JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <style>
     body {
       font-family: sans-serif;
@@ -54,14 +57,6 @@
   </div>
   </form>
 
- <!-- Include SweetAlert CSS -->
-<!-- Include SweetAlert CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
-
-<!-- Include SweetAlert JS -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-<!-- JavaScript code -->
 <script>
   function showSweetAlert() {
     Swal.fire({
@@ -85,9 +80,8 @@
     window.location='mail.php?email=<?php echo $_REQUEST['email'] ?>';
   }
 });
-
   }
-//  showSweetAlert();
+
 function showSweetAlert2() {
     Swal.fire({
       title: 'ไม่พบอีเมล',
@@ -97,14 +91,11 @@ function showSweetAlert2() {
       showConfirmButton: false, // Hide the OK button
     });
 
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
     }, 1000);
   }
 </script>
-
-  <!--  -->
 
   <?php
     require '../connect.php';
@@ -116,7 +107,6 @@ function showSweetAlert2() {
       echo "<script type='text/javascript'>",
       "showSweetAlert();",
       "</script>";
-
     }else{
       echo "<script type='text/javascript'>",
       "showSweetAlert2();",

@@ -1,5 +1,3 @@
-<!-- Include SweetAlert CSS -->
-<!-- Include SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 <!-- Include SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -14,7 +12,6 @@
       showConfirmButton: false, // Hide the OK button
     });
 
-    // Set a timeout to close SweetAlert after 3 seconds
     setTimeout(() => {
       Swal.close();
       window.location='../home/leasson.php';
@@ -33,10 +30,8 @@
       echo "<script type='text/javascript'>",
       "showSweetAlert2();",
       "</script>";
-       //require('../home/leasson.php');
     } else {
       echo "Error deleting record: " . mysqli_error($conn);
     }
-    
     // mysqli_close($conn);
 ?>

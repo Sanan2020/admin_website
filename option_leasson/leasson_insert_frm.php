@@ -7,10 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guitar</title>
-   
 </head>
 <style>
-
 form {
       width: 300px;
       /* margin: 0 auto; */
@@ -52,7 +50,6 @@ form {
        Freq_end: <input name="freq_e" type="text" value="" required>
         <input style="padding: 6px 14px; background-color: #04AA6D; border: none; color: white;" type="submit" name="fileToUploadsub" value="Insert" onclick="">
         </form>
-
 </center>
 </body>
 </html>
