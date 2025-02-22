@@ -18,4 +18,5 @@
 #ตัวอย่าง Web Admin
 ![image](https://github.com/user-attachments/assets/91b64de1-5ce0-4d3e-bfb6-ce2d110c8622)
 
-![802700942337284707](https://github.com/user-attachments/assets/52ee7483-b094-401a-a897-4799176ebf4d)
+
+![Screenshot 2025-02-22 235642](https://github.com/user-attachments/assets/830e79b3-2c4d-4ea5-a243-db2d4cbac25d)
