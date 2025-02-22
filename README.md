@@ -14,6 +14,4 @@
    - พัฒนาด้วย Ngrok
    - บริการนี้ทำหน้าที่เป็นตัวกลางให้ Flutter App สามารถเชื่อมต่อกับเซิร์ฟเวอร์ที่รันอยู่บนเครื่อง local
 
-
-   ![alt text](image.png)
 ![image](https://github.com/user-attachments/assets/91b64de1-5ce0-4d3e-bfb6-ce2d110c8622)
