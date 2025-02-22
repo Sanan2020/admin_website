@@ -12,7 +12,7 @@
   function showSweetAlert() {
     Swal.fire({
       title: 'สร้างรหัสผ่านใหม่เรียบร้อยแล้ว',
-      text: 'This is a SweetAlert dialog.',
+      text: '',
       icon: 'success',
       // confirmButtonText: 'OK'
       showConfirmButton: false, // Hide the OK button
@@ -29,7 +29,7 @@
 function showSweetAlert2() {
     Swal.fire({
       title: 'กรุณากรอกรหัสผ่านให้ตรงกัน',
-      text: 'This is a SweetAlert dialog.',
+      text: '',
       icon: 'error',
       // confirmButtonText: 'OK'
       showConfirmButton: false, // Hide the OK button

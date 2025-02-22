@@ -5,17 +5,16 @@
 <style>
     body {
       font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     form {
       width: 300px;
-      margin: 0 auto;
+      /* margin: 0 auto; */
       padding: 40px;  
-
       background-color:cornflowerblue;
-      /* position: absolute; */
-      /* left: 37%; */
-      /* top: 20%; */
     }
 
     input {
@@ -49,7 +48,7 @@
     <input type="email" name="email" placeholder="Email" required>
     <input type="password" name="password" placeholder="Password" required>
     <!-- <a style="right: 0; position: absolute;" href="signup.html">Forgot your password?</a> -->
-    <a href="../new/PHPMailer/fmail.php">Forgot your password?</a><br><br>
+    <a href="../admin_website/PHPMailer/fmail.php">Forgot your password?</a><br><br>
     <button type="submit" >Login</button>
     <div class="login-link">
       <span>Don't have an account?</span>

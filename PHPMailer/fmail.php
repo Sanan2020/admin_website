@@ -7,6 +7,9 @@
 <style>
     body {
       font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     form {
@@ -15,9 +18,6 @@
         padding: 40px;  
 
       background-color:cornflowerblue;
-      position: absolute;
-      left: 37%;
-      top: 20%;
     }
 
     input {
@@ -85,7 +85,7 @@
 function showSweetAlert2() {
     Swal.fire({
       title: 'ไม่พบอีเมล',
-      text: 'This is a SweetAlert dialog.',
+      text: '',
       icon: 'error',
       // confirmButtonText: 'OK'
       showConfirmButton: false, // Hide the OK button

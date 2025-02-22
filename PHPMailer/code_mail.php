@@ -18,7 +18,7 @@ $ran = $_REQUEST['ran'];
 function showSweetAlert2() {
     Swal.fire({
       title: 'รหัสไม่ถูกต้อง',
-      text: 'This is a SweetAlert dialog.',
+      text: '',
       icon: 'error',
       // confirmButtonText: 'OK'
       showConfirmButton: false, // Hide the OK button
