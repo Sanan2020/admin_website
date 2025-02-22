@@ -30,7 +30,7 @@
 
 - จัดการข้อมูลแบบฝึกหัด: สามารถเพิ่ม ลบ แก้ไขบัข้อมูลแบบฝึกหัดได้
   
-![image](https://github.com/user-attachments/assets/146c9a14-3f90-45ba-a9fe-3c1a9bef8400)
+![image](https://github.com/user-attachments/assets/bbe417b5-8ba6-4233-885f-1ed1326d1906)
 
 # ตัวอย่าง Flutter App
 - หน้าเมนู
