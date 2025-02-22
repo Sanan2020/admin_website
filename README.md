@@ -26,7 +26,7 @@
 
 - จัดการข้อมูลบทเรียน: สามารถเพิ่ม ลบ แก้ไขข้อมูลบทเรียนได้
   
-![image](https://github.com/user-attachments/assets/722f8890-286c-4188-af89-4eb88b4f7dba)
+![image](https://github.com/user-attachments/assets/86686c4f-4a13-4630-9f70-a9785d38ea05)
 
 - จัดการข้อมูลแบบฝึกหัด: สามารถเพิ่ม ลบ แก้ไขบัข้อมูลแบบฝึกหัดได้
   
