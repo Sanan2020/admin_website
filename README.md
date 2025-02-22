@@ -15,6 +15,7 @@
    - บริการนี้ทำหน้าที่เป็นตัวกลางให้ Flutter App สามารถเชื่อมต่อกับเซิร์ฟเวอร์ที่รันอยู่บนเครื่อง local
 
 
+
 เทคโนโลยีที่ใช้: HTML, CSS, JavaScript, PHP, MySQL, Ngrok, Flutter(Dart), Flutter FFT
 
 **โปรเจ็กต์นี้ใช้ Flutter FFT ในการพัฒนาการวิเคราะห์เสียง**
